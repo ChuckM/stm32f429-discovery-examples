@@ -50,3 +50,8 @@ that was checked in in November of 2015.
 * Now testing 0x32a91e5 (Aug 15, 2016) down 3 commits ... still BROKEN
 * Now testing 0x2614577 (Aug 15, 2016) add missing 4x9 defines ... still BROKEN <<<**THIS ONE**
 * Now testing 0x543ac0f (Aug 15, 2016) between the above and cf7d0a0 ... and that one works.
+
+So the Oldest commit where the library works is 0x543ac0f, the next newer commit 0x2614577 it
+no longer works. There are many flag changes in RCC in that commit so that is where we'll look
+next.
+
