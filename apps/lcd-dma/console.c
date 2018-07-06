@@ -33,7 +33,7 @@
 #include <libopencm3/stm32/iwdg.h>
 #include <libopencm3/cm3/scb.h>
 #include <libopencm3/cm3/cortex.h>
-#include "clock.h"
+#include "../util/clock.h"
 #include "console.h"
 
 

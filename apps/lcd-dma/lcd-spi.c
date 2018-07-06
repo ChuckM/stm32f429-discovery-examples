@@ -30,7 +30,7 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/cm3/nvic.h>
 
-#include "clock.h"
+#include "../util/clock.h"
 
 #define LCD_SPI SPI5
 
@@ -109,7 +109,7 @@ lcd_command(uint8_t cmd, int delay, int n_args, const uint8_t *args)
 	gpio_set(GPIOC, GPIO2);	   /* Turn off chip select */
 	gpio_clear(GPIOD, GPIO13); /* always reset D/CX */
 	if (delay) {
-		milli_sleep(delay); /* wait, if called for */
+		msleep(delay); /* wait, if called for */
 	}
 }
 

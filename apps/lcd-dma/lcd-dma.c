@@ -7,10 +7,10 @@
 #include <libopencm3/stm32/gpio.h>
 #include <libopencm3/stm32/ltdc.h>
 
-#include "clock.h"
+#include "../util/clock.h"
 #include "console.h"
 #include "lcd-spi.h"
-#include "sdram.h"
+#include "../util/sdram.h"
 
 #define LCD_WIDTH  240
 #define LCD_HEIGHT 320

@@ -1,4 +1,4 @@
-OBJS = sdram.o clock.o console.o lcd-spi.o
+OBJS = ../util/sdram.o ../util/clock.o console.o lcd-spi.o
 
 CFLAGS += -I../../libopencm3/include
 BINARY = lcd-dma
