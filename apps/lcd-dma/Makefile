@@ -1,11 +1,13 @@
 OBJS = sdram.o clock.o console.o lcd-spi.o
 
+CFLAGS += -I../../libopencm3/include
 BINARY = lcd-dma
 CSTD = -std=gnu99
 
 # we use sin/cos from the library
 LDLIBS += -lm
 
-DEVICE = STM32F429ZI
+#DEVICE = STM32F429ZI
+LDSCRIPT = old-429.ld
 
 include ../../Makefile.include

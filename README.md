@@ -38,3 +38,15 @@ the DMA subsystem rather than clocks.
 
 Noted the problems with clocks, fixed up rcc.c, pwr.c, and headers and generated PR
 
+I have confirmed that with version 0xd0ac7fe of the library the lcd-dma demo works
+that was checked in in November of 2015.
+
+* Now testing 0x8225089 (Jan 2016) ... that still works.
+* Now testing 0x781e4d9 (Aug 15, 2016) ...  that still works
+* Now testing 0x755ce40 (Jan 10, 2017) ...  that DOES NOT work.
+* Now testing 0x74b228f (Aug 18, 2016) ...  that DOES NOT work.
+* Now testing 0xcf7d0a0 (Aug 15, 2016) one after the one above ... that works.
+* Now testing 0x2db3d29 (Aug 16, 2016) mid page ... BROKEN
+* Now testing 0x32a91e5 (Aug 15, 2016) down 3 commits ... still BROKEN
+* Now testing 0x2614577 (Aug 15, 2016) add missing 4x9 defines ... still BROKEN <<<**THIS ONE**
+* Now testing 0x543ac0f (Aug 15, 2016) between the above and cf7d0a0 ... and that one works.

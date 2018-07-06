@@ -64,6 +64,8 @@ void clock_setup(void)
 {
 	/* Base board frequency, set to 168Mhz */
 	rcc_clock_setup_hse_3v3(&rcc_hse_8mhz_3v3[RCC_CLOCK_3V3_168MHZ]);
+/* NEEDED for < Jan 2016 versions of the library */
+/*	rcc_clock_setup_hse_3v3(&hse_8mhz_3v3[CLOCK_3V3_168MHZ]); */
 
 	/* clock rate / 168000 to get 1mS interrupt rate */
 	systick_set_reload(168000);
