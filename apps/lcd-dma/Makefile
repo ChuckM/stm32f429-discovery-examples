@@ -7,7 +7,6 @@ CSTD = -std=gnu99
 # we use sin/cos from the library
 LDLIBS += -lm
 
-#DEVICE = STM32F429ZI
-LDSCRIPT = old-429.ld
+DEVICE = STM32F429ZI
 
 include ../../Makefile.include

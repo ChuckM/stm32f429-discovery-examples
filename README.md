@@ -55,3 +55,11 @@ So the Oldest commit where the library works is 0x543ac0f, the next newer commit
 no longer works. There are many flag changes in RCC in that commit so that is where we'll look
 next.
 
+zyp figured out from that commit (that was 110 additional `#defines` and 10 deletions) one
+of which changed a mask, to two variables the mask and the shift. The division constant
+was not correctly being shifted so it screwed up the timing.
+
+```
+-	RCC_DCKCFGR |= RCC_DCKCFGR_PLLSAIDIVR_DIVR_8;
++	RCC_DCKCFGR |= (RCC_DCKCFGR_PLLSAIDIVR_DIVR_8 << RCC_DCKCFGR_PLLSAIDIVR_SHIFT);
+```
