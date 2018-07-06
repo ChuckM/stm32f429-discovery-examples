@@ -1,0 +1,1 @@
+timer_reset isn't defined but it is used by this code.

@@ -1,0 +1,3 @@
+Setup call to the usb driver has changed.
+
+The callback needed to return a usbd_result_enum instead of an integer
